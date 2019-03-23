@@ -14,6 +14,7 @@ The following environment variables are supported:
 |          | TAG                  | Tag to copy. If not supplied, defaults to `latest`.             |
 
 ### Example
+The following example will copy `alpine:edge` from `Docker Hub` to `localhost:5000`:
 
 ```
 docker run --rm \
