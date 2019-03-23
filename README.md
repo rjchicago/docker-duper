@@ -24,14 +24,16 @@ docker run --rm \
   rjchicago/docker-duper
 ```
 
-## <a href="note-insecure-registries"></a>Note on Insecure Registries:
+# docker-duper demo
+
+## <a name="note-insecure-registries"></a>Note on Insecure Registries
 In order to run the demo, you will need to update your Docker insecure registries:
 https://docs.docker.com/registry/insecure/
 
 For this demo, add `localhost:5000`
 
 
-## <a href="demo-up"></a>Demo Up
+## <a name="demo-up"></a>Demo Up
 To run the full demo, clone this repo and run the following script:
 
 ```
@@ -43,7 +45,7 @@ The demo will spin up a registry and copy in a couple of images.
 Lastly, the demo should pop open a Web browser to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
 
-## <a href="demo-down"></a>Demo Down
+## <a name="demo-down"></a>Demo Down
 To complete and end the demo, run the following script:
 
 ```
@@ -51,8 +53,12 @@ sh demo-down.sh
 ```
 
 
-## <a href="docker-run"></a>Docker Run
-You can run single purpose containers to copy images as needed. An official image of `docker-duper` is available on Docker Hub:
+# single purpose containers
+
+## <a name="docker-run"></a>Docker Run
+You can run single purpose containers to copy images as needed.
+
+An official image of `docker-duper` is available on Docker Hub:
 * https://hub.docker.com/r/rjchicago/docker-duper
 
 For this example, we'll run the local registry (see note on [insecure registries](#note-insecure-registries)):
