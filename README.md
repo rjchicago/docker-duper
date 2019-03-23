@@ -60,6 +60,7 @@ sh demo-down.sh
 You can run single purpose containers to copy images as needed.
 
 An official image of `docker-duper` is available on Docker Hub:
+
 * https://hub.docker.com/r/rjchicago/docker-duper
 
 For this example, we'll run the local registry (see note on [insecure registries](#note-insecure-registries)):
@@ -88,7 +89,9 @@ docker run --rm \
   -e IMAGE='alpine' \
   -e DESTINATION_REGISTRY='localhost:5000' \
   rjchicago/docker-duper
+```
 
+```
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -e IMAGE='alpine' \
