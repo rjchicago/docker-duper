@@ -40,7 +40,7 @@ sh demo-up.sh
 
 The demo will spin up a registry and copy in a couple of images.
 
-Lastly, the demo should pop open a Web browser to http://localhost:8080
+Lastly, the demo should pop open a Web browser to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
 
 ## <a href="demo-down"></a>Demo Down
@@ -71,7 +71,7 @@ docker run --rm \
   rjchicago/docker-duper
 ```
 
-Preview your registry at http://localhost:8080
+Preview your registry at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>
 
 Now let's copy over the `alpine:latest` and `alpine:edge` images:
 
