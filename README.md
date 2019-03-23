@@ -5,6 +5,7 @@ Welcome to **Docker-Duper**!
 **Docker-Duper** is a self-contained image to facilitate copying images from one repository to another.
 
 The following environment variables are supported:
+
 | Required | Variable             | Description                                                     |
 |:--------:|----------------------|-----------------------------------------------------------------|
 |          | SOURCE_REGISTRY      | Registry to copy from. If not supplied, defaults to Docker Hub. |
@@ -13,6 +14,7 @@ The following environment variables are supported:
 |          | TAG                  | Tag to copy. If not supplied, defaults to `latest`.             |
 
 ### Example
+
 ```
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
