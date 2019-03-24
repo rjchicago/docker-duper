@@ -22,3 +22,5 @@ DESTINATION_URI=${DESTINATION_REGISTRY:-}/$IMAGE:${TAG:-latest}
 
 docker pull $SOURCE_URI
 docker images $SOURCE_URI --format "docker tag {{.Repository}}:{{.Tag}} $DESTINATION_URI | docker push $DESTINATION_URI" | bash
+
+exit 0
