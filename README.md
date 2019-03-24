@@ -25,6 +25,9 @@ docker run --rm \
   rjchicago/docker-duper
 ```
 
+*NOTE: update `localhost:5000` with your registry*
+
+
 # docker-duper demo
 
 ## <a name="note-insecure-registries"></a>Note on Insecure Registries
