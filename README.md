@@ -76,7 +76,7 @@ For this demo, add `localhost:5000`
 To run the full demo, clone this repo and run the following script:
 
 ``` sh
-sh demo-up.sh
+sh demo\demo-up.sh
 ```
 
 The demo will spin up a registry and copy in a couple of images.
@@ -88,7 +88,7 @@ Lastly, the demo should pop open a Web browser to <a href="http://localhost:8080
 To complete and end the demo, run the following script:
 
 ``` sh
-sh demo-down.sh
+sh demo\demo-down.sh
 ```
 
 ## single purpose containers
@@ -104,7 +104,7 @@ An official image of `docker-duper` is available on Docker Hub:
 For this example, we'll run the local registry (see note on [insecure registries](#note-insecure-registries)):
 
 ``` sh
-docker-compose -f registry.yml up -d
+docker-compose -f  docker-registry.yml up -d
 ```
 
 Next, we'll run a single purpose container to copy `docker-duper` to our registry:
@@ -141,5 +141,5 @@ docker run --rm \
 When you're done, don't forget to compose down the demo registry:
 
 ``` sh
-docker-compose -f registry.yml down
+docker-compose -f  docker-registry.yml down
 ```
