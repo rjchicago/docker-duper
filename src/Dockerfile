@@ -4,4 +4,4 @@ RUN apk add --update --no-cache bash
 
 COPY ./duper.sh /duper.sh
 
-CMD ["bash", "duper.sh"]
+ENTRYPOINT ["sh", "duper.sh"]
