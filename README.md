@@ -4,7 +4,7 @@ Welcome to **Docker-Duper**!
 
 **Docker-Duper** is a self-contained image to facilitate duplicating Docker images from one registry to another.
 
-The following environment variables are supported:
+## Supported Variables
 
 | Required | Variable             | Description                                                                           |
 |:--------:|----------------------|---------------------------------------------------------------------------------------|
